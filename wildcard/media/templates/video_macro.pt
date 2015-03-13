@@ -29,6 +29,9 @@
                                  height view/height|string:240"/>
         </object>
     </video>
+    <div class="media-actions">
+      <a href="" target="_" title="Download media" tal:attributes="href string:${context/absolute_url}/@@download">Download media</a>
+    </div>
 </tal:has_video>
 <tal:yt tal:condition="context/youtube_url|nothing">
     <video width="640" height="360" id="player1" preload="none" class="active"
